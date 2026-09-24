@@ -1,0 +1,9 @@
+[project]
+name = "codestra-recognition-engine"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.115,<1","uvicorn[standard]>=0.30,<1","pydantic-settings>=2.5,<3","prometheus-client>=0.21,<1","numpy>=2,<3"]
+[project.optional-dependencies]
+dev=["pytest>=8,<9"]
+[tool.pytest.ini_options]
+pythonpath=["."]
